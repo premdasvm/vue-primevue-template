@@ -64,6 +64,9 @@ devDependencies:
   vite:
     specifier: ^4.4.9
     version: 4.4.9(@types/node@18.17.17)
+  vite-plugin-vue-meta-layouts:
+    specifier: ^0.3.0
+    version: 0.3.0(vite@4.4.9)(vue-router@4.2.4)
   vue-tsc:
     specifier: ^1.8.11
     version: 1.8.11(typescript@5.2.2)
@@ -2302,6 +2305,17 @@ packages:
     dependencies:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
+    dev: true
+
+  /vite-plugin-vue-meta-layouts@0.3.0(vite@4.4.9)(vue-router@4.2.4):
+    resolution: {integrity: sha512-6N1Y2tascKSfUs8VC/aSyxe2oNhPrrz5DKRWSoowqJ34Eww8bEk4Mmj/1K+K9jQ/KTnOyj1l96SBwt3gIbclSQ==}
+    peerDependencies:
+      vite: '>=2.0.0'
+      vue-router: '>=4.0.14'
+    dependencies:
+      local-pkg: 0.4.3
+      vite: 4.4.9(@types/node@18.17.17)
+      vue-router: 4.2.4(vue@3.3.4)
     dev: true
 
   /vite@4.4.9(@types/node@18.17.17):

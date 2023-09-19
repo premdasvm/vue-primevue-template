@@ -6,6 +6,7 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
+import MetaLayouts from 'vite-plugin-vue-meta-layouts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,6 +20,7 @@ export default defineConfig({
       routesFolder: 'src/pages'
     }),
     Vue(),
+    MetaLayouts(),
     Components(),
     AutoImport({
       include: [

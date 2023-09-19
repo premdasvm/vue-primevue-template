@@ -13,3 +13,5 @@
   }
 }
 </style>
+
+<route> { meta: { layout: 'other' } } </route>
